@@ -15,7 +15,7 @@ public class LoginDefinitions {
 
     @When("{actor} tries to login")
     public void userTriesToLogin(Actor actor){
-
+        actor.attemptsTo();
     }
 
     @Then("{actor} should see the product list")
